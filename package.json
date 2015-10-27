@@ -1,0 +1,26 @@
+{
+  "name": "dumudp-server",
+  "version": "1.0.0",
+  "description": "Dummy UDP server that dumps in STDOUT incoming messages",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "udp",
+    "server",
+    "nodejs",
+    "docker",
+    "development",
+    "mirror",
+    "server",
+    "dummy"
+  ],
+  "author": "Joris Berthelot <admin@eexit.net>",
+  "license": "MIT",
+  "homepage": "https://github.com/eexit/dumudp-server",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:eexit/dumudp-server.git"
+  }
+}
