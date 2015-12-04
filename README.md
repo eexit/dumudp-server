@@ -1,10 +1,11 @@
-# Dummy UDP Server
+# Dummy UDP Server [![DockerHub](https://img.shields.io/badge/docker-hub-brightgreen.svg?style=flat)](https://hub.docker.com/r/eexit/dumudp-server)
 
 A basic UDP mirror server that dumps in STDOUT anything you send to it. Useful to test your application
 or metrics backends like DataDog.
 
 ## Quick start
 
+    $ docker pull eexit/dumudp-server
     $ docker run -dp 8125:8125/udp --name dumudp-server eexit/dumudp-server
 
 Send your UDP packets:
@@ -14,7 +15,7 @@ Send your UDP packets:
 Check on the container log:
 
     $ docker logs -f dumudp-server
-    > dumudp-server@1.0.0 start /usr/src/app
+    > dumudp-server@1.0.1 start /usr/src/app
     > node server.js
 
     Started to listen on 0.0.0.0:8125...

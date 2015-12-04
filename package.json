@@ -1,6 +1,6 @@
 {
   "name": "dumudp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dummy UDP server that dumps in STDOUT incoming messages",
   "main": "server.js",
   "scripts": {
