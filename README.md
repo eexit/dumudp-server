@@ -10,18 +10,18 @@ or metrics backends like DataDog.
 
 Send your UDP packets:
 
-    $ echo -n "dumudp-server.test.counter:1|c" | nc -w 1 -u $(docker-machine ip default) 8125
+    $ echo -n "dumudp-server.test.counter:1|c" | nc -w 1 -u 127.0.0.1 8125
 
 Check on the container log:
 
     $ docker logs -f dumudp-server
-    > dumudp-server@1.0.1 start /usr/src/app
+    > dumudp-server@1.1.0 start /app
     > node server.js
 
     Started to listen on 0.0.0.0:8125...
-    192.168.99.1:51852 >>> dumudp-server.test.counter:1|c
-    192.168.99.1:64023 >>> dumudp-server.test.counter:1|c
-    192.168.99.1:62620 >>> dumudp-server.test.counter:1|c
+    172.17.0.1:38722 >>> dumudp-server.test.counter:1|c
+    172.17.0.1:43596 >>> dumudp-server.test.counter:1|c
+    172.17.0.1:39459 >>> dumudp-server.test.counter:1|c
 
 ### Change the port
 
